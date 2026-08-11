@@ -1,0 +1,4 @@
+interface:
+  display_name: "中医养生问询"
+  short_description: "主动引导描述身体状态，辨别体质倾向并给出低风险养生建议"
+  default_prompt: "使用 $ask-tcm-safely 主动引导我描述身体状态；按需梳理体质倾向，信息足够后再给可执行的低风险养生建议，并继续在对话中复盘。"
