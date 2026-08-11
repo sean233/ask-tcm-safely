@@ -2,6 +2,17 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-Hant.md)
 
+## Use the public site
+
+<https://ask-tcm-safely.sean310.chatgpt.site>
+
+This is an anonymous BYOK site: use your own model API key without signing in. Official endpoints for Gemini Pro, Grok 4.5, and DeepSeek Pro are already configured. Only **Custom model** needs a public HTTPS endpoint, a model ID, an API key, and a choice of `auto`, OpenAI-compatible, or Anthropic Messages protocol.
+
+- Keys and conversation stay only in the current tab's page memory. For a request, the key passes through this site to the selected provider or custom endpoint; do not enter a real key anywhere except the site's model settings.
+- Provider-native search is off by default. It is optional only for Gemini and Grok; DeepSeek and custom endpoints receive no attached search tool. Prefer a Pro model with strong world knowledge, and turn on native search only when current information needs verification.
+- Google sign-in is not configured and is unavailable. It would not provide model credits even if enabled later.
+- DeepSeek uses the official base URL `https://api.deepseek.com` and sends requests to `POST /chat/completions`.
+
 A privacy-aware, conversation-first Chinese wellness consultation skill for Codex and ChatGPT.
 
 It is designed for generally stable people who want help with daily wellness tea, food therapy, sleep, routine, seasonal care, exercise recovery, gentle maintenance, or a cautious discussion of Chinese-medicine constitution tendencies. It assumes that most people do not know which details matter, so it actively guides the conversation instead of waiting for a perfect symptom report.

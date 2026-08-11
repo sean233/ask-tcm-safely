@@ -2,6 +2,17 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-Hant.md)
 
+## 在线公开站点
+
+<https://ask-tcm-safely.sean310.chatgpt.site>
+
+这是一个匿名 BYOK 站点：无需登录，使用自己的模型 API key 即可开始。Gemini Pro、Grok 4.5 与 DeepSeek Pro 的官方 Endpoint 已配置；只有「自定义模型」需要填写公开 HTTPS Endpoint、模型 ID、API key，并选择 `auto`、OpenAI-compatible 或 Anthropic Messages 协议。
+
+- key 和对话只保存在当前标签页的页面内存。每次请求时，key 会经本站转发至所选模型服务商或自定义 endpoint；除本站模型设置外，不要在其他地方输入真实 key。
+- 服务商原生搜索默认关闭，只有 Gemini 和 Grok 可选开启；DeepSeek 和自定义 endpoint 不附加搜索工具。建议优先选世界知识较强的 Pro 模型，只在需要核验当前资料时开启原生搜索。
+- Google 登录目前未配置，不能使用；即使未来启用，也不会提供模型额度。
+- DeepSeek 使用官方 base URL `https://api.deepseek.com`，实际请求为 `POST /chat/completions`。
+
 一个重视隐私、以持续对话为核心的 Codex / ChatGPT 中医养生问询技能。
 
 它面向总体稳定、希望了解日常养生茶、食养、睡眠作息、季节调护、运动恢复、温和保养或中医体质倾向的人。它默认普通人不知道该描述什么、也想不起哪些细节重要，因此会主动用容易回答的问题引导，而不是等用户交出一份“完美病史”。
